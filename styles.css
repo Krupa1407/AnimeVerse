@@ -114,7 +114,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  background-color: var(--primary-color);
+  color: white;
+  background-color: black;
 }
 
 
@@ -127,7 +128,7 @@ nav {
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  background-color: rgba(188, 28, 92, 0.9);
+  /* background-color: rgba(188, 28, 92, 0.9); */
   transform: translateY(-100%);
   transition: 0.5s;
   z-index: -1;
@@ -174,7 +175,7 @@ nav {
 
   max-width: 100%;
   background-color: #C9C9C9;
-  height: 100vh;
+  /* height: 100vh; */
   overflow: hidden;
   display: grid;
   gap: 2rem;
@@ -206,6 +207,94 @@ nav {
   margin-inline: auto;
 }
 
+.explore__bg {
+  margin-top: 4rem;
+  padding-block: 3rem;
+  display: grid;
+  grid-template-columns:
+    minmax(1rem, 1fr)
+    minmax(0, var(--max-width))
+    minmax(1rem, 1fr);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/footer.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.explore__content {
+  grid-column: 2/3;
+  /* max-width: 400px; */
+  padding: 2rem;
+  background-color: rgb(229, 224, 224);
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.explore__content p {
+  margin-bottom: 0.5rem;
+}
+
+
+.footer {
+  background-color: var(--text-dark);
+}
+
+.footer__container {
+  display: grid;
+  gap: 4rem 2rem;
+}
+
+.footer__col .section__description {
+  margin-block: 2rem;
+}
+
+.footer__col h4 {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.footer__links {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.footer__links a {
+  color: var(--text-light);
+  transition: 0.3s;
+}
+
+.footer__links a:hover {
+  color: var(--white);
+}
+
+.footer__socials {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer__socials img {
+  max-width: 25px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.footer__socials img:hover {
+  opacity: 1;
+}
+
+.footer__bar {
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  text-align: center;
+}
 
 
 
@@ -213,7 +302,12 @@ nav {
 
 
 
+@media (width > 576px) {
 
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 
 
@@ -266,7 +360,9 @@ nav {
   }
 
 
-
+  .footer__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
 
 

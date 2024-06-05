@@ -1,3 +1,59 @@
+const navLinks = document.getElementById("nav-links");
+
+
+navLinks.addEventListener("click", () => {
+  navLinks.classList.remove("open");
+});
+
+
+
+
+const scrollRevealOption = {
+    distance: "50px",
+    origin: "bottom",
+    duration: 1000,
+  };
+  
+  // header container
+  ScrollReveal().reveal(".header__container p", {
+    ...scrollRevealOption,
+  });
+  
+  ScrollReveal().reveal(".header__container h1", {
+    ...scrollRevealOption,
+    delay: 500,
+  });
+  
+  
+  // about container
+  ScrollReveal().reveal(".about__image img", {
+    ...scrollRevealOption,
+    origin: "left",
+  });
+  
+  ScrollReveal().reveal(".about__content .section__subheader", {
+    ...scrollRevealOption,
+    delay: 400,
+  });
+  
+  ScrollReveal().reveal(".about__content .section__header", {
+    ...scrollRevealOption,
+    delay: 800,
+  });
+  
+  ScrollReveal().reveal(".about__content .section__description", {
+    ...scrollRevealOption,
+    delay: 1000,
+  });
+  
+  ScrollReveal().reveal(".about__btn", {
+    ...scrollRevealOption,
+    delay: 1200,
+  });
+
+
+
+
 
 const myHeaders = new Headers();
 myHeaders.append("x-apihub-key", "UmNBQiWYnFhntLaB08dHhKda0n-FXcNm35eGqGFKIoPYMNhDJK");
