@@ -170,6 +170,23 @@ nav {
   color: var(--primary-color);
 }
 
+.about__container {
+
+  max-width: 100%;
+  background-color: #C9C9C9;
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  gap: 2rem;
+}
+
+.about__image img {
+  max-width: 450px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+
 
 
 
